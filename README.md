@@ -11,8 +11,10 @@ Written in Python, the circle is complete. Using the Flask framework with websoc
 ## Running
 ```
 pip install -r requirements.txt
+
 ./multipython.py
 ```
+That will open a server on port 8080.
 
 ## But seriously...
 With the basic app, a piano keyboard could be shared by many users, however this isn't a replacement for MIDI, and I'm sure that timing the notes on all browsers would be complicated, especially with network lag. Have fun!
