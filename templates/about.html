@@ -1,0 +1,19 @@
+{% extends "baseplate.html" %}
+{% block content%}
+<article class="content-section">
+    <h2 id="multipython">MultiPython</h2>
+    <p>A multi-user sound board with Monty Python Doom2 sounds. Extremely silly.</p>
+    <p>Inspired by a multi-user <a href="https://boingboing.net/2022/03/08/dont-you-dare-turn-off-this-digital-lamp.html">digital lamp</a> project, I slapped together a multi-user sound board, where anyone on the page can play sounds from a 1994 WAD file to Monty Pythonize your Doom2 experience.</p></p>
+    <p>Written in Python, the circle is complete. Using the Flask framework with websockets for live action.</p>
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+    <li>Raspberry Pi. I used a PI3, but any should do.</li>
+    </ul>
+    <h2 id="running">Running</h2>
+    <pre><code>pip install -r requirements<span class="hljs-selector-class">.txt</span>
+    
+    ./multipython.py
+    </code></pre><h2 id="but-seriously-">But seriously...</h2>
+    <p>With the basic app, a piano keyboard could be shared by many users, however this isn&#39;t a replacement for MIDI, and I&#39;m sure that timing the notes on all browsers would be complicated, especially with network lag. Have fun!</p>
+</article>
+{% endblock content%}
